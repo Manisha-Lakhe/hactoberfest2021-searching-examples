@@ -1,0 +1,20 @@
+In computer science, searching is a crucial topic. Everyone is searching on the Internet for audio, video, text, etc.Searching is the process of finding a given value position in a list of values. There are two types of searching Linear Search and Binary Search
+A linear search or sequential search is an algorithm that is used to find the element from a list .List can either be an array or linked list. In linear search every element is examined untill we find a given value of position .It decided whether a key is present in a list or not.If the value being searched for doesn't exist, a flag value is returned (such as -1 for an array or NULL for a linked list).
+ // Time Complexity of  Linear Search :Best case:O(1)   Worst case:O(n)
+ // Space complexity of Linear Search :O(1)
+ //Advantages of linear Search are:
+   1.There is no need to be array or linked list to be sorted 
+   2.It is easy to implement
+   3.It is preferrable for the small-sized data sets.
+ // Drawbacks of linear Search are:
+   1.It took more time then other searching algorithms.
+   
+ Binary search, also known as half-interval search ,logarithmic search  is a search algorithm that finds the position of a target value within a sorted array. Binary search compares the target value to the middle element of the array. If they are not equal, the half in which the target cannot lie is eliminated and the search continues on the remaining half, again taking the middle element to compare to the target value, and repeating this until the target value is found. If the search ends with the remaining half being empty, the target is not in the array.It is based on the divide and conquer approach.
+ //Time Complexity of Binary search : Best case:O(1)   Worst case:O(logn)
+ // Space complexity of Binary Search :O(1)
+ //Advantages of Binary Search are:
+    1.The main advantage of using binary search is that it does not scan each element in the list. Instead of scanning each element, it performs the searching to the half of the list. So, the binary search takes less time to search an element as compared to a linear search.
+    2.It is preferrable for the large-sized data sets.
+  //Disadvantages of Binary Search are:  
+    1.The array or the list need to be sorted .
+ 

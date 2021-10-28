@@ -1,0 +1,51 @@
+In Binary search a sorted array by repeatedly dividing the search interval in half. Begin with an interval covering the whole array. If the value of the search key is less than the item in the middle of the interval, narrow the interval to the lower half. Otherwise, narrow it to the upper half. Repeatedly check until the value is found or the interval is empty.
+//Code of Binary search using conditional operator
+#include<stdio.h>
+int binarySearch(int arr[],int x,int beg,int last)
+{
+  if(beg>last)
+     return 0;
+   int mid=(beg+last)/2;
+   return (a[mid]==x?mid:a[mid]>x?binarySearch(a,x,beg,mid-1):binarySearch(a,x,mid+1,last+1));
+}
+int main()
+{
+  int a[20],i,x,mid,beg,last,n;
+  printf("Enter size of array\n");
+  scanf("%d",&n);
+  printf(Enter elements");
+  for(i=1;i<=n;i++)
+  {
+    scanf("%d",&a[i]);
+  }
+  printf("Enter element to be searched");
+  scanf("%d",&x);
+  last=n;
+  beg=1;
+  mid=binarySearch(a,x,beg,last);
+  if(mid!=0)
+  {
+    printf("Element found at %d\n",mid);
+  }
+  else
+  printf("Element not found");
+ }
+ /*
+ Output
+ Enter no of elements
+ 5
+ Enter elements
+ 10
+ 19
+ 28
+ 89
+ 110
+ Enter elements to be searched
+ 28
+ Element found at 2
+ */
+ //Time Complexity:O(nlogn)
+ 
+ 
+  
+   
